@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @album.title %>
+</p>
+
+
+
+<%(0...@album.images.count).each do |image| %>
+  <div style="width: 300px; height: 300px;">
+  <%= image_tag(@album.images[image], style: 'width:100%; height:auto' ) %>
+  </div>
+  <% end%><br>
+
+
+<%= link_to 'Edit', edit_user_album_path(@current_user, @album) %> |
+<%= link_to 'Back', user_albums_path(@current_user) %>

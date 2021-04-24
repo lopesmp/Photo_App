@@ -1,0 +1,23 @@
+<h1>Welcome to the page of <%= @user.username %></h2>
+
+<% if current_user == @user %>
+  <h3>This is my page!!!</h3>
+ 
+
+
+
+  <h2>Albums</h2>
+  <% for album in current_user.albums %>
+      <ul>
+        <li><%= album.title  %></li>
+        <%= link_to 'Show', user_album_path(current_user, album)  %>
+        <%= link_to 'Edit', edit_user_album_path(current_user, album) %> 
+    </ul>
+  <% end %>
+
+
+<%= link_to 'Add Album', user_albums_path(current_user) %> 
+<br>
+<%= link_to 'Edit', edit_user_path(current_user) %> 
+
+<% end %>
