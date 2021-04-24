@@ -15,7 +15,7 @@
       <tr>
         <td><%= album.title %></td>
        
-        <td><%= link_to 'Show', [@current_user] %></td>
+        <td><%= link_to 'Show', user_album_path(current_user, album)  %></td>
         <td><%= link_to 'Edit', edit_user_album_path(@current_user, album) %></td>
         <td><%= link_to 'Destroy', [@current_user, album], method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
