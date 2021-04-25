@@ -3,8 +3,9 @@
 <% if current_user == @user %>
   <h3>This is my page!!!</h3>
  
-
+<div>
   <%= image_tag(@user.image)%>
+</div>
 
   <h2>Albums</h2>
   <% for album in current_user.albums %>
