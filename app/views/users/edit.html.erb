@@ -1,0 +1,13 @@
+
+<h1>Update your profile</h1>
+
+  
+<%= form_with(model: [@user], local: true) do |form| %>
+      
+    <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image%>
+    </div>
+
+    <%= form.submit "Update Account" %>
+<% end %>

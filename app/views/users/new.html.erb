@@ -1,5 +1,11 @@
   
   <%= form_for @user do |f| %>
+      
+      <div class="field">
+      <%= f.label :image %>
+      <%= f.file_field :image %>
+      </div>
+
       <%= f.label :username %>
       <br>
       <%= f.text_field :username, placeholder: "Username" %>

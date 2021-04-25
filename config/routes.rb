@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get "/login", to: "sessions#new", as: 'login'
   post "/sessions", to: "sessions#create"
   delete "/sessions", to: "sessions#destroy", as: 'logout'
+  get '/users/:id',  to: 'users#show',  as: 'edit'
 
   resources :users do
     resources :albums

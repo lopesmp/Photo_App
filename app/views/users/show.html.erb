@@ -1,10 +1,10 @@
-<h1>Welcome to the page of <%= @user.username %></h2>
+<h1>Welcome to <%= @user.username %>'s Profile </h2>
 
 <% if current_user == @user %>
   <h3>This is my page!!!</h3>
  
 
-
+  <%= image_tag(@user.image)%>
 
   <h2>Albums</h2>
   <% for album in current_user.albums %>
