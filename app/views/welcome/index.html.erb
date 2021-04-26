@@ -21,17 +21,22 @@
 </style>
 </head>
 <body>
-  <br>
-  <br>
-  <h1>Current Users</h1>
+<br>
+
+  <h1 style="text-align: center; color: blue">Current Users</h1>
   <div style="margin: auto">
     <div class="slider">
         <% @users.each do |user| %>
-        <%= user.username %>
+
             <%= image_tag(user.image) %><br>
         <% end %>
     </div>
   </div>
+<nav>
+<div class = "footer">
+  <%= link_to 'About Page' %>
+</div>
+</nav>
 </body>
 </html>
 

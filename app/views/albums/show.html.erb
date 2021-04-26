@@ -1,9 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p style="text-align: center;">
-  <strong>Title:</strong>
-  <%= @album.title %>
-</p>
+
 
 <html>
 <head>
@@ -28,8 +25,9 @@
 </style>
 </head>
 <body>
+<br>
   <div style="margin: auto">
-  <h1 style="text-align: center; color: blue">Current Users</h1>
+  <h1 style="text-align: center; color: blue"><%= @album.title %></h1>
     <div class="slider">
           <%(0...@album.images.count).each do |image| %>
             <div style="width: 400px; height: 400px;">
@@ -39,9 +37,17 @@
     </div>
   </div>
 </body>
-  <div style="margin-left: 70px">
-  <%= link_to 'Edit', edit_user_album_path(@current_user, @album) %> |
-  <%= link_to 'Back', user_albums_path(@current_user) %>
-  </div>
+<nav>
+ <div class = "footer">
+  
+      <div style="margin-left: 70px">
+
+      <%= link_to 'Edit', edit_user_album_path(@current_user, @album) %> |
+      <%= link_to 'Back', user_albums_path(@current_user) %>
+ 
+      </div>
+  </nav>
+</div>
+  
 </html>
 

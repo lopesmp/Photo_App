@@ -16,9 +16,14 @@
     </ul>
   <% end %>
 
+<div >
+ <nav>
+  <div class = "footer">
+      <%= link_to 'Add Album', user_albums_path(current_user) %> |
 
-<%= link_to 'Add Album', user_albums_path(current_user) %> 
-<br>
-<%= link_to 'Edit', edit_user_path(current_user) %> 
+      <%= link_to 'Edit Profile', edit_user_path(current_user) %> 
 
-<% end %>
+      <% end %>
+  </div>
+  </nav>
+</div>
