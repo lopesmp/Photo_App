@@ -1,11 +1,40 @@
-<h1>Welcome</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<html>
+<head>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
-<h1>Current Users</h1>
-    <div>
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+        mode: 'fade',
+        captions: true,
+        adaptiveHeight: true,
+        slideWidth: 500
+     });    });
+  </script>
+<style>
+.bx-wrapper {
+    margin: 0 auto;
+}
+</style>
+</head>
+<body>
+  <br>
+  <br>
+  <h1>Current Users</h1>
+  <div style="margin: auto">
+    <div class="slider">
         <% @users.each do |user| %>
-        <%= user.username %><br>
-        <%= image_tag(user.image) %><br>
+        <%= user.username %>
+            <%= image_tag(user.image) %><br>
         <% end %>
     </div>
+  </div>
+</body>
+</html>
+
+
+    
+    

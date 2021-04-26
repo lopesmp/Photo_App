@@ -14,22 +14,45 @@
  *= require_self
  */
 
- body {
-    background-color: #7d8b97;
-    font-family: Verdana, Helvetica, Arial;
-    font-size: 14px;
-    padding-bottom: 250px;
-  }
-  
-  #container {
-    width: 75%;
-    margin: 0 auto;
-    background-color: #FFF;
-    padding: 20px 40px;
-    border: solid 1px black;
-    margin-top: 20px;
-  }
 
-  #user_header {
-    float: right;
-  }
+ body {
+  background-color: white;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+  padding-bottom: 250px;
+}
+
+#container {
+  width: auto 100%;
+  margin: 0 auto;
+  background-color: rgba(144, 222, 230, 0.856);
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+  color: blue;
+}
+
+#user_header {
+  float: right;
+}
+
+nav ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+
+nav li {
+ display: inline-block;
+ margin-right: 15px;
+}
+
+nav a {
+ color: black;
+ text-decoration: none;
+ text-shadow: 2px 2px 4px #000000
+}
+
+nav a:hover{
+ color: white;
+}
