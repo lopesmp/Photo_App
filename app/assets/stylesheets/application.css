@@ -18,7 +18,7 @@
  body {
   background-color: #7d8b97;
   font-family: Verdana, Helvetica, Arial;
-  font-size: 24px;
+  font-size: 18px;
   padding-bottom: 250px;
 }
 
@@ -62,7 +62,7 @@ nav a:hover{
   left: 0;
   bottom: 0;
   width: 100%;
-  font-size: 24px;
+  font-size: 20px;
   background-color: rgba(144, 222, 230, 0.856);
   color: white;
   text-align: center;
