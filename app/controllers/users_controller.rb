@@ -27,9 +27,20 @@ class UsersController < ApplicationController
       end
 
       def update
-        @user = User.find(params[:id])
-       
-        redirect_to user_path(@user)
+        respond_to do |format|
+        
+            if user_params[:image].present?
+              user_params[:image].each do |image|
+                @user.image.attach(image)
+          
+            end
+            format.html { redirect_to user_path(@current_user), notice: "User was successfully updated." }
+            format.json { render :show, status: :ok, location: @user }
+          else
+            format.html { render :edit }
+            format.json { render json: @user.errors, status: :unprocessable_entity }
+          end
+        end
       end
     
       private

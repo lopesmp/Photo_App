@@ -38,15 +38,20 @@ class AlbumsController < ApplicationController
   # PATCH/PUT /albums/1 or /albums/1.json
   def update
     respond_to do |format|
-      if @album.update(album_params)
+      if @album.update(album_params.reject { |k| k["images"] })
+        if album_params[:images].present?
+          album_params[:images].each do |image|
+            @album.images.attach(image)
+          end
+        end
         format.html { redirect_to user_album_path(@current_user), notice: "Album was successfully updated." }
         format.json { render :show, status: :ok, location: @album }
       else
-        format.html { render :edit, status: :unprocessable_entity }
+        format.html { render :edit }
         format.json { render json: @album.errors, status: :unprocessable_entity }
       end
     end
-  end
+   end
 
   # DELETE /albums/1 or /albums/1.json
   def destroy
