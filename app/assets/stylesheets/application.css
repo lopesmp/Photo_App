@@ -14,11 +14,14 @@
  *= require_self
  */
 
+ * {
+  font-family:  'Brush Script MT';
+   }
 
  body {
   background-color: #7d8b97;
   font-family: Verdana, Helvetica, Arial;
-  font-size: 18px;
+  font-size: 24px;
   padding-bottom: 250px;
 }
 
@@ -62,7 +65,7 @@ nav a:hover{
   left: 0;
   bottom: 0;
   width: 100%;
-  font-size: 20px;
+  font-size: 24px;
   background-color: rgba(144, 222, 230, 0.856);
   color: white;
   text-align: center;

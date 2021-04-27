@@ -12,21 +12,30 @@
   <body>
  
   <div>
+
     <nav id="container">
       <ul>
           <li><%= link_to "Home", welcome_index_path %> </li>
         <div id = "user_header">
         
           <% if current_user %>
+        
             <li><%= link_to "Profile", current_user %></li>
             <li><%= link_to "Log out", sessions_path, method: :delete %> </li>
-            Welcome <%= current_user.username %>!
+           
           <%else%>
-            <li><%= link_to "Sign Up", signup_path %> or </li>
+            <li><%= link_to "Sign Up", signup_path %></li>
             <li><%= link_to "Log In", login_path %> </li>
           <% end %>
       </ul>
     </nav>
+    
+    <div style = "text-align: right; padding-right: 80px; padding-top: 10px;";>
+    <% if current_user %>
+    Welcome <%= current_user.username %>!
+
+    <%end%>
+    </div>
   </div>
    
     <%= yield %>
