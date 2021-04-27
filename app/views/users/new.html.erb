@@ -1,4 +1,6 @@
   
+  <h1>Welcome to the sign up page </h1>
+  
   <%= form_for @user do |f| %>
       
       <div class="field">
@@ -21,3 +23,9 @@
       <br>
       <%= f.submit "Create Account" %>
   <% end %>
+
+  <nav>
+    <div class = "footer">
+      <%= link_to 'About Page', about_path %>
+    </div>
+  </nav>

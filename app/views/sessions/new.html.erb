@@ -1,4 +1,7 @@
 
+<h1>Please log in</h1>
+
+
 <%= form_tag sessions_path do %>
     <%= label_tag "Username" %>
     <br>
@@ -11,3 +14,9 @@
     <br>
     <%= submit_tag "Log In"%>
 <% end %>
+
+<nav>
+<div class = "footer">
+  <%= link_to 'About Page', about_path %>
+</div>
+</nav>

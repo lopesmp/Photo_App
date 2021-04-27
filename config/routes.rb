@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   post "/sessions", to: "sessions#create"
   delete "/sessions", to: "sessions#destroy", as: 'logout'
   get '/users/:id',  to: 'users#show',  as: 'edit'
+  get '/about', to: 'about#index'
 
   resources :users do
     resources :albums
