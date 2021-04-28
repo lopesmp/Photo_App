@@ -13,11 +13,89 @@
  *= require_tree .
  *= require_self
  */
+ @import 'bootstrap';
 
- * {
-  font-family:  'Brush Script MT';
+ 
+ $font-stack:    Helvetica, sans-serif;
+ $primary-color: #333;
+ $black: black;
+ $white: white;
+ $blue: blue;
+ $border: rgba(144, 222, 230, 0.856);
+
+
+ body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-color: #7d8b97;
+  font-size: 18px;
+  padding-bottom: 250px;
+}
+
+h1 {
+  color: $blue;
+}
+
+h2 {
+  color: #683dd4
+}
+
+#container {
+  width: auto 100%;
+  margin: 0 auto;
+  background-color: $border;
+  padding: 20px 40px;
+  border: solid 1px $black;
+  margin-top: 20px;
+  color: $blue;
+}
+
+#user_header {
+  float: right;
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block;
+      margin-right: 15px; }
+
+  a {
+    display: block;
+    color: $black;
+    padding: 6px 12px;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  a:hover{
+    color: $white;
    }
+}
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 20px;
+  background-color: $border;
+  color: $white;
+  text-align: center;
+}
+
+
+#user_header {
+  float: right;
+}
+
+
+
+ 
+/*
  body {
   background-color: #7d8b97;
   font-family: Verdana, Helvetica, Arial;
@@ -70,5 +148,5 @@ nav a:hover{
   color: white;
   text-align: center;
 }
-
+*/
 
