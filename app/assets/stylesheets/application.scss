@@ -27,9 +27,10 @@
  body {
   font: 100% $font-stack;
   color: $primary-color;
-  background-color: #7d8b97;
-  font-size: 18px;
-  padding-bottom: 250px;
+  // background-color: #7d8b97;
+  background-image: url("background2.jpg");
+  font-size: 20px;
+  padding-bottom: 100px;
 }
 
 h1 {
@@ -45,9 +46,13 @@ h2 {
   margin: 0 auto;
   background-color: $border;
   padding: 20px 40px;
-  border: solid 1px $black;
+  border: solid 2px $black;
   margin-top: 20px;
+  margin-bottom: 5px;
   color: $blue;
+  border-radius: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #user_header {
@@ -78,75 +83,31 @@ nav {
 
 .footer {
   position: fixed;
+  width: auto 100%;
+  margin: 0 auto;
   left: 0;
   bottom: 0;
-  width: 100%;
   font-size: 20px;
   background-color: $border;
   color: $white;
   text-align: center;
-}
-
-
-#user_header {
-  float: right;
-}
-
-
-
- 
-/*
- body {
-  background-color: #7d8b97;
-  font-family: Verdana, Helvetica, Arial;
-  font-size: 24px;
-  padding-bottom: 250px;
-}
-
-#container {
-  width: auto 100%;
-  margin: 0 auto;
-  background-color: rgba(144, 222, 230, 0.856);
-  padding: 20px 40px;
-  border: solid 1px black;
+  border: solid 2px $black;
   margin-top: 20px;
-  color: blue;
+  color: $blue;
+  border-radius: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
+
 
 #user_header {
   float: right;
 }
 
-nav ul {
- margin: 0;
- padding: 0;
- list-style: none;
+#user_welcome {
+ text-align: right; 
+ padding-right: 80px; 
+ padding-top: 10px; 
+ color: purple;
+ font-size: 26px;
 }
-
-nav li {
- display: inline-block;
- margin-right: 15px;
-}
-
-nav a {
- color: black;
- text-decoration: none;
- text-shadow: 2px 2px 4px #000000
-}
-
-nav a:hover{
- color: white;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  font-size: 24px;
-  background-color: rgba(144, 222, 230, 0.856);
-  color: white;
-  text-align: center;
-}
-*/
-

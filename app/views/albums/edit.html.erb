@@ -4,7 +4,8 @@
 
 <nav>
     <div class = "footer">
-    <%= link_to 'Show', [@current_user, @album] %> |
-    <%= link_to 'Back', user_albums_path(@current_user) %>
+    <ul>
+      <li><%= link_to 'Show', [@current_user, @album] %></li> |
+      <li><%= link_to 'Back', user_albums_path(@current_user) %></li>
     </div>
   </nav>
