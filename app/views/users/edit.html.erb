@@ -1,16 +1,18 @@
 
-<h1>Update your profile</h1>
+<h1 style="text-align: center">Update your profile image</h1>
 
-  
+<div style="margin-left: 40%"> 
 <%= form_with(model: [@user], local: true) do |form| %>
       
-    <div class="field">
+    <div style="width: 40%" class="form-group">
     <%= form.label :image %>
-    <%= form.file_field :image%>
+    <%= form.file_field :image, class: "form-control" %>
     </div>
 
-    <%= form.submit "Update Account" %>
+    <%= submit_tag "Update", class: "btn btn-primary" %>
 <% end %>
+
+</div>
 
 <nav>
  <div class = "footer">
