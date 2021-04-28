@@ -1,29 +1,32 @@
-<h1 style="text-align: center">This will be the about page </h1>
+<h1 style="text-align: center">Wyncode Cohorts</h1>
+  <div style="margin-left: 30%">
 
-<div>
-<h2>Bryan</h2>
-<p></p>
-<%= image_tag ('joe.jpg') %>
+    <div>
+      <h2>Bryan</h2>
+      <p></p>
+        <div style="width: 250px; height: 250px;">
+        <%= image_tag ('joe.jpg'), style: 'width:100%; height:100%; border-radius: 50%;'%>
+        </div>
+    </div>
 
-</div>
+    <div>
+      <h2>Asia</h2>
+      <p></p>
+        <div style="width: 250px; height: 250px;">
+        <%= image_tag ('nancy.png'), style: 'width:100%; height:100%; border-radius: 50%;' %>
+        </div>
+    </div>
 
-<div>
-<h2>Asia</h2>
-<%= image_tag ('nancy.png') %>
-
-</div>
-
-<div>
-<h2>Michele</h2>
-<%= image_tag ('news.jpeg') %>
-</div>
-
-
-
-
-
+    <div>
+      <h2>Michele</h2>
+      <p></p>
+        <div style="width: 250px; height: 250px;">
+        <%= image_tag ('news.jpeg'), style: 'width:100%; height:100%; border-radius: 50%;' %>
+        </div>
+    </div>
+  </div>
 <nav>
-<div class = "footer">
-  <%= link_to 'Back', welcome_index_path %>
-</div>
+  <div class = "footer">
+    <%= link_to 'Back', welcome_index_path %>
+  </div>
 </nav>
