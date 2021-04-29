@@ -1,3 +1,13 @@
+<script type="text/javascript">
+$(document).ready(function(){    
+    if(document.URL.indexOf("#")==-1){
+        url = document.URL+"#";
+        location = "#";
+        location.reload(true);
+    }
+});
+</script>
+</script>
 <p id="notice"><%= notice %></p>
 
 <html>
@@ -15,6 +25,7 @@
         adaptiveHeight: true,
         slideWidth: 500
      });    });
+    
   </script>
 <style>
 .bx-wrapper {
