@@ -24,12 +24,9 @@
     <body>
       <br>
       <div style="margin: auto">
-        <h1 style="text-align: center; color: blue">Current Users</h1>
-        
-          <div class="slider">
-              <% @users.each do |user| %>
-                  <%= image_tag(user.image) %>
-              <% end %>
+        <h1 style="text-align: center; color: blue">Hello <%= current_user.username %>!</h1>
+          <div style="margin-left: 25%">
+          <%= image_tag 'welcome.gif' %>
           </div>
         </div>
       <nav>
