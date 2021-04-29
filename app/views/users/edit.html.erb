@@ -1,13 +1,45 @@
 
-<h1>Update your profile</h1>
+<h1 style="text-align: center">Update your profile</h1>
 
-  
+<div style="margin-left: 40%"> 
 <%= form_with(model: [@user], local: true) do |form| %>
       
-    <div class="field">
+    <div style="width: 40%" class="form-group">
     <%= form.label :image %>
-    <%= form.file_field :image%>
+    <%= form.file_field :image, class: "form-control" %>
     </div>
 
-    <%= form.submit "Update Account" %>
+    <div style="width: 40%" class="form-group">
+    <%= form.label :username %>
+    <br>
+    <%= form.text_field :username, placeholder: "Username", autofocus: true, class: "form-control" %>
+    
+    </div>
+
+    <div style="width: 40%" class="form-group">
+    <%= form.label :password %>
+    <br>
+    <%= form.password_field :password, placeholder: "Password", class: "form-control" %>
+    
+    </div>
+
+    <div style="width: 40%" class="form-group">
+    <%= form.label :password_confirmation %>
+    <br>
+    <%= form.password_field :password_confirmation, placeholder: "Confirm Password", class: "form-control" %>
+    <br>
+    </div>
+
+    <%= submit_tag "Update", class: "btn btn-primary" %>
 <% end %>
+
+</div>
+
+<nav>
+ <div class = "footer">
+      <div >
+        <ul>
+            <li> <%= link_to 'Back', current_user %> </li>
+        </ul>
+      </div>
+  </nav>

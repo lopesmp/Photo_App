@@ -1,0 +1,113 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import 'bootstrap';
+
+ 
+ $font-stack:    Helvetica, sans-serif;
+ $primary-color: #333;
+ $black: black;
+ $white: white;
+ $blue: blue;
+ $border: rgba(144, 222, 230, 0.856);
+
+
+ body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  // background-color: #7d8b97;
+  background-image: url("background2.jpg");
+  font-size: 20px;
+  padding-bottom: 100px;
+}
+
+h1 {
+  color: $blue;
+}
+
+h2 {
+  color: #683dd4
+}
+
+#container {
+  width: auto 100%;
+  margin: 0 auto;
+  background-color: $border;
+  padding: 20px 40px;
+  border: solid 2px $black;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: $blue;
+  border-radius: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#user_header {
+  float: right;
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block;
+      margin-right: 15px; }
+
+  a {
+    display: block;
+    color: $black;
+    padding: 6px 12px;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  a:hover{
+    color: $white;
+   }
+}
+
+.footer {
+  position: fixed;
+  width: auto 100%;
+  margin: 0 auto;
+  left: 0;
+  bottom: 0;
+  font-size: 20px;
+  background-color: $border;
+  color: $white;
+  text-align: center;
+  border: solid 2px $black;
+  margin-top: 20px;
+  color: $blue;
+  border-radius: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+#user_header {
+  float: right;
+}
+
+#user_welcome {
+ text-align: right; 
+ padding-right: 80px; 
+ padding-top: 10px; 
+ color: purple;
+ font-size: 26px;
+}

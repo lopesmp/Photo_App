@@ -1,29 +1,32 @@
-<h1>Welcome to <%= @user.username %>'s Profile </h2>
+<h1 style="text-align: center"><%= @user.username %>'s Album Library</h2>
 
+<div style="margin-left: 30%">
 <% if current_user == @user %>
-  <h3>This is my page!!!</h3>
+
  
 <div>
   <%= image_tag(@user.image)%>
 </div>
-
+<br>
   <h2>Albums</h2>
   <% for album in current_user.albums %>
       <ul>
-        <li><%= album.title  %></li>
-        <%= link_to 'Show', user_album_path(current_user, album)  %>
-        <%= link_to 'Edit', edit_user_album_path(current_user, album) %> 
+        <li style = "color: blue;"><%= album.title  %></li>
+        <%= link_to 'Show', user_album_path(current_user, album), class: "btn btn-primary" %>
+        <%= link_to 'Edit', edit_user_album_path(current_user, album), class: "btn btn-primary" %> 
     </ul>
   <% end %>
+  </div>
 
 <div >
  <nav>
   <div class = "footer">
-      <%= link_to 'Add Album', user_albums_path(current_user) %> |
+  <ul>
+    <li>  <%= link_to 'Add Album', user_albums_path(current_user) %> </li> |
+     <li> <%= link_to 'Edit Profile', edit_user_path(current_user) %> </li>
+      <% end %>  
+      </ul>  
 
-      <%= link_to 'Edit Profile', edit_user_path(current_user) %> 
-
-      <% end %>
   </div>
   </nav>
 </div>

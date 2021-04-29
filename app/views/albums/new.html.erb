@@ -1,5 +1,13 @@
-<h1>New Album</h1>
+<h1 style="text-align: center">New Album</h1>
 
 <%= render 'form', album: @album %>
 
-<%= link_to 'Back', user_albums_path(@current_user) %>
+<nav>
+    <div class = "footer">
+      <ul>
+        <li> <%= link_to 'Back', user_albums_path(@current_user) %> </li>
+      </ul>
+    </div>
+  </nav>
+
+

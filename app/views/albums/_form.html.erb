@@ -1,3 +1,5 @@
+
+<div style="margin-left: 40%">
 <%= form_with(model: [@current_user, album], local: true) do |form| %>
   <% if album.errors.any? %>
     <div id="error_explanation">
@@ -11,17 +13,19 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div style="width: 40%" class="form-group">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, class: "form-control"  %>
   </div>
 
-  <div class="field">
+  <div style="width: 40%" class="form-group">
   <%= form.label :images%>
-  <%= form.file_field :images, multiple: true %>
+  <%= form.file_field :images, multiple: true, class: "form-control"  %>
 </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= submit_tag "Update Album", class: "btn btn-primary" %>
   </div>
 <% end %>
+
+</div>

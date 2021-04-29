@@ -1,6 +1,11 @@
-<h1>Editing Album</h1>
+<h1 style="text-align: center">Add Image to Album</h1>
 
 <%= render 'form', album: @album %>
 
-<%= link_to 'Show', [@current_user, @album] %> |
-<%= link_to 'Back', user_albums_path(@current_user) %>
+<nav>
+    <div class = "footer">
+    <ul>
+      <li><%= link_to 'Show', [@current_user, @album] %></li> |
+      <li><%= link_to 'Back', user_albums_path(@current_user) %></li>
+    </div>
+  </nav>
