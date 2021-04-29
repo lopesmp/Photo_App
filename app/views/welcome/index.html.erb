@@ -1,43 +1,43 @@
 <html>
-<head>
+  <head>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
-  <script>
-    $(document).ready(function(){
-      $('.slider').bxSlider({
-        mode: 'fade',
-        captions: true,
-        adaptiveHeight: true,
-        slideWidth: 500
-     });    });
-  </script>
-<style>
-.bx-wrapper {
-    margin: 0 auto;
-    
-}
-</style>
-</head>
-<body>
-<br>
-<div style="margin: auto">
-  <h1 style="text-align: center; color: blue">Current Users</h1>
-  
-    <div class="slider">
-        <% @users.each do |user| %>
-            <%= image_tag(user.image) %>
-        <% end %>
-    </div>
-  </div>
-<nav>
-<div class = "footer">
-  <%= link_to 'About', about_path %>
-</div>
-</nav>
-</body>
+    <script>
+      $(document).ready(function(){
+        $('.slider').bxSlider({
+          mode: 'fade',
+          captions: true,
+          adaptiveHeight: true,
+          slideWidth: 500
+      });    });
+    </script>
+  <style>
+  .bx-wrapper {
+      margin: 0 auto;
+      
+  }
+  </style>
+  </head>
+    <body>
+      <br>
+      <div style="margin: auto">
+        <h1 style="text-align: center; color: blue">Current Users</h1>
+        
+          <div class="slider">
+              <% @users.each do |user| %>
+                  <%= image_tag(user.image) %>
+              <% end %>
+          </div>
+        </div>
+      <nav>
+        <div class = "footer">
+          <%= link_to 'About', about_path %>
+        </div>
+      </nav>
+    </body>
 </html>
 
 

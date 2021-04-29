@@ -11,7 +11,7 @@
   <h2>Albums</h2>
   <% for album in current_user.albums %>
       <ul>
-        <li><%= album.title  %></li>
+        <li style = "color: blue;"><%= album.title  %></li>
         <%= link_to 'Show', user_album_path(current_user, album), class: "btn btn-primary" %>
         <%= link_to 'Edit', edit_user_album_path(current_user, album), class: "btn btn-primary" %> 
     </ul>

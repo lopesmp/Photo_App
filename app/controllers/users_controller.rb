@@ -28,17 +28,12 @@ class UsersController < ApplicationController
 
       def update
         respond_to do |format|
-        
-            if user_params[:image].present?
-              user_params[:image].each do |image|
-                @user.image.attach(image)
-          
-            end
-            format.html { redirect_to user_path(@current_user), notice: "User was successfully updated." }
+          if current_user.update(user_params)
+            format.html { redirect_to @user, notice: "Profile was successfully updated." }
             format.json { render :show, status: :ok, location: @user }
           else
-            format.html { render :edit }
-            format.json { render json: @user.errors, status: :unprocessable_entity }
+            format.html { render :edit, status: :unprocessable_entity }
+            format.json { render json: @users.errors, status: :unprocessable_entity }
           end
         end
       end
