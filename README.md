@@ -13,12 +13,6 @@ You will be greeted with a Welcome screen where you will find a link to the Sign
 <img src= "./app/assets/images/Screenshot1.png" width=400>
 <img src= "./app/assets/images/Screenshot3.png" width=400>  
 
-You can then Log In and Add Albums to upload your favorite Images to a Slider  
-
-<img src= "./app/assets/images/Screenshot4.png" width=200 height=200>
-<img src= "./app/assets/images/Screenshot5.png" width=200 height=200>
-<img src= "./app/assets/images/Screenshot6.png" width=200 height=200>
-
 ## Project collaborators 
 
 Thank you to the Wyncode Cohorts who contributed to this project:
