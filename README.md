@@ -2,13 +2,26 @@
 
 ## Description
 
-This project is about making a clone of Imgur called Photo_App. It allows users to upload images to their own User/Albums. The project was designed to have a medium difficulty for beginners learning to code with Ruby on Rails. Is is a good starting point for those who want to stand up a Rails application from scratch. Once you've explored this Rails application, feel free to update it and experiment on your own.
+This project is about making a clone of Imgur called Photo_App. It allows users to upload images to their own User/Albums. The project was designed to have a medium difficulty for beginners learning to code with Ruby on Rails. It is a starting point for those who want to stand up a Rails application from scratch. Once you've explored this Rails application, feel free to update it and experiment on your own.
 
 Link to github: https://github.com/wyncode/student-resources/tree/master/trio-project
 
+## Screen Shots  
+  
+You will be greeted with a Welcome screen where you will find a link to the Sign Up form  
+
+<img src= "./app/assets/images/Screenshot1.png" width=400>
+<img src= "./app/assets/images/Screenshot3.png" width=400>  
+
+You can then Log In and Add Albums to upload your favorite Images to a Slider  
+
+<img src= "./app/assets/images/Screenshot4.png" width=200 height=200>
+<img src= "./app/assets/images/Screenshot5.png" width=200 height=200>
+<img src= "./app/assets/images/Screenshot6.png" width=200 height=200>
+
 ## Project collaborators 
 
-Thank you to the Wyncode cohorts who collaborated on this project:
+Thank you to the Wyncode Cohorts who contributed to this project:
 
 Link to github: https://github.com/asath1
 
