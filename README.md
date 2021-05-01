@@ -11,15 +11,12 @@ Link to github: https://github.com/wyncode/student-resources/tree/master/trio-pr
 You will be greeted with a Welcome screen where you will find a link to the Sign Up form  
 
 <img src= "./app/assets/images/Screenshot1.png" width=400>
+<img src= "./app/assets/images/Screenshot2.png" width=400>  
+
+You can also Log In as Admin or Joe, password: "123456" to start adding Albums and Uploading Images
+
 <img src= "./app/assets/images/Screenshot3.png" width=400>  
-
-## Project collaborators 
-
-Thank you to the Wyncode Cohorts who contributed to this project:
-
-Link to github: https://github.com/asath1
-
-Link to github: https://github.com/lopesmp 
+<img src= "./app/assets/images/Screenshot4.png" width=400>  
 
 ## Installation
 
@@ -54,6 +51,7 @@ Database creation:
 ```bash
 rails db:create
 rails db:migrate
+rails db:seed
 ```
 Starting up the Web Server: 
 ```bash
@@ -64,6 +62,14 @@ To see the application in action, open a browser window and navigate to http://l
 ## Usage 
 
 Once the application is running you will be able to upload Users with a profile pic, username and password. Each user will then have the ability to create their own Albums to upload images files to. The application uses ActiveStorage to store blobs of the files uploaded which are then stored locally on your machine, but there is future potential for cloud uploads and many other options. 
+
+## Project collaborators 
+
+Thank you to the Wyncode Cohorts who contributed to this project:
+
+Link to github: https://github.com/asath1
+
+Link to github: https://github.com/lopesmp 
 
 ## Project status
 
