@@ -69,7 +69,7 @@ Thank you to the Wyncode Cohorts who contributed to this project:
 
 Link to github: https://github.com/asath1
 
-Link to github: https://github.com/bchecchia/
+Link to github: https://github.com/bchecchia
 
 ## Project status
 
