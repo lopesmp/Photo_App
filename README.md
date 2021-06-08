@@ -44,7 +44,7 @@ rails --version
 ```
 Clone respository: 
 ```bash
-git clone https://github.com/bchecchia/Photo_App.git
+git clone https://github.com/lopesmp/Photo_App.git
 cd photo_app
 ```
 Database creation:
@@ -69,7 +69,7 @@ Thank you to the Wyncode Cohorts who contributed to this project:
 
 Link to github: https://github.com/asath1
 
-Link to github: https://github.com/lopesmp 
+Link to github: https://github.com/bchecchia/
 
 ## Project status
 
